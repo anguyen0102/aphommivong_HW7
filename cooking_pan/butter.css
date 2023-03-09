@@ -1,6 +1,7 @@
 body {
     background-color: #37654f;
     color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h1 {
@@ -11,11 +12,19 @@ h1 {
 
 fieldset {
     padding: 5px;
+    font-weight: normal;
+    font-style: normal ;
     border: solid 5px #2f4858;
 }
 
+legend {
+    font-size: medium;
+    font-weight: bolder;
+}
+
 body {
-    margin: 20px;
+    margin: 10px;
+    font-style: italic;
 }
 
 hr {
