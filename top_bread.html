@@ -11,34 +11,37 @@
     <h1>Animal Adoption Statistics Survey</h1>
     <p>
         This survey is to gather statistics on what characteristics and features people are more attracted to when adopting an animal from a shelter.
-        To begin, please fill out the following contact form, and proceed to the second part of the survey.
+        To begin, please fill out the following contact form, and proceed to the second page. 
+        This survey is relatively short with six questions, after the personal information page. 
     </p>
 <form>
+    <hr>
+    <hr>
     <fieldset>
-        <legend>Contact Information</legend>
+        <legend>Personal Information</legend>
         <caption>
             Please provide the following information as accurately as possible.
             <hr>
         </caption>
         <div>
-            <label for="fname"> First Name:
-                <input id="fname" type="text" autofocus tabindex="1">
-            </label>
+            <label for="fname"> First Name:</label>
+                <input id="fname" type="text" autofocus required tabindex="1" >
         </div>
         <div>
-            <label for="lname"> Last Name:
-                <input id="lname" type="text" tabindex="2">
-            </label>
+            <label for="lname"> Last Name:</label>
+                <input id="lname" type="text" required tabindex="2" >
         </div>
         <div>
-            <label for="email"> Email Address:
-                <input id="email" type="email" tabindex="3">
-            </label>
+            <label for="email"> Email Address:</label>
+                <input id="email" type="email" required tabindex="3">
         </div>
         <div>
-            <label for="telephone"> Phone Number:
-                <input type="tel" name="[unique-name]" tabindex="4">
-            </label>
+            <label for="telephone"> Phone Number:</label>
+                <input type="tel" name="[unique-name]" required tabindex="4" >
+        </div>
+        <div>
+            <label for="date"> Date:</label>
+                <input type="date" id="inpdate" name="date" required tabindex="5">
         </div>
     </fieldset>
         <hr>
@@ -71,13 +74,16 @@
         <hr>
     <div>
         <label for="Fence"> Do you have a fenced in yard?
-            <input type="radio" id="yes" name="fence" value ="yes"> Yes
+            <input type="radio" id="yes" name="fence" value ="yes" required> Yes
         </label>    
     
         <label for="Fence">
             <input type="radio" id="no" name="fence" value="no"> No
         </label>
     </div>
+    <hr>
+    <hr>
+    <input type="reset">
     <hr>
 </form>
 

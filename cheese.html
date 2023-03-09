@@ -11,142 +11,130 @@
     <h1>Animal Adoption Statistics Survey</h1>
 
 <form>
-    <div>
-        <label for="adopting_yn"> Are you currently looking for a pet? 
-            <select name="adopting_yn" id="adopting_yn">
-            <option value="" selected> Choose one ... </option>
-            <option value="Yes"> Yes </option>
-            <option value="No"> No </option>
-            <option value="Undecided"> Undecided </option>
-            </select>     
-        </label>
-    </div>
-        <hr>
+    <hr>
+    <hr>
     <div>
         <fieldset>
+            <div>
+                <label for="adopting_yn"> Are you currently looking for a pet? 
+                    <select name="adopting_yn" id="adopting_yn">
+                    <option value="" selected> Choose one ... </option>
+                    <option value="Yes"> Yes </option>
+                    <option value="No"> No </option>
+                    <option value="Undecided"> Undecided </option>
+                    </select>     
+                </label>
+            </div>
             <caption>Do you have a specific preference for its species?</caption>
             <label for="dog"> 
-                <input type="radio" id="dpg" name="species" value="dog"> Dog 
+                <input type="checkbox" id="dog" name="species" value="dog"> Dog 
             </label>
             
             <label for="cat">
-                <input type="radio" id="cat" name="species" value="cat"> Cat
+                <input type="checkbox" id="cat" name="species" value="cat"> Cat
             </label>
             
             <label for="bird">
-            <input type="radio" id="bird" nsame="species" value="bird"> Bird
+            <input type="checkbox" id="bird" name="species" value="bird"> Bird
             </label>
             
             <label for="no preference">
-                <input type="radio" id="no preference" nsame="species" value="no preference"> No Preference
+                <input type="checkbox" id="no preference" name="species" value="no preference"> No Preference
             </label> 
-            <div>
-                <label for="other"> Other:
-                    <input id="other" type="text">
-                </label>
-            </div> 
+        </div> 
         </fieldset>
     </div>
     <hr>
     <div>
         <fieldset>
-            <legend>What characteristics of the animal are you looking for when adopting?</legend>
-            <caption>Energy Level: Select all that apply.</caption>
+        <h3>What characteristics of the animal are you looking for when adopting?</h3>
+        <p>
+            Please answer as accurately as possible.
+        </p>
+        <hr>
+        <caption>Age</caption>
+            <div>
+                <label for="older">
+                    <input type="radio" id="older" name="age" value ="older"> Older
+                </label>    
+            
+                <label for="younger">
+                    <input type="radio" id="younger" name="age" value="younger"> Younger
+                </label>
+            
+                <label for="No Preference">
+                    <input type="radio" id="No Preference" name="age" value="No Preference"> No Preference
+                </label>
+            </div>
+
+        <hr>
+            <caption>Energy Level</caption>
             <div>
                 <label for="energetic">
-                    <input type="radio" id="energetic" name="characteristics" value ="energetic"> Energetic
+                    <input type="radio" id="energetic" name="energy" value ="energetic"> Energetic
                 </label>    
             
                 <label for="calm">
-                    <input type="radio" id="calm" name="characteristics" value="calm"> Calm
+                    <input type="radio" id="calm" name="energy" value="calm"> Calm
                 </label>
             
                 <label for="lazy">
-                    <input type="radio" id="lazy" name="characteristics" value="lazy"> Lazy
+                    <input type="radio" id="lazy" name="energy" value="lazy"> Lazy
                 </label>
 
                 <label for="no preference">
-                    <input type="radio" id="no preference" name="characteristics" value="no preference"> No Preference
+                    <input type="radio" id="no preference" name="energy" value="no preference"> No Preference
                 </label>
             </div>
             <hr>
-            <caption>Size: Select all that apply.</caption>
+
+            <caption>Size</caption>
             <div>
-                <label for="energetic">
-                    <input type="radio" id="energetic" name="characteristics" value ="energetic"> Energetic
+                <label for="XLarge">
+                    <input type="radio" id="XLarge" name="size" value ="XLarge"> Extra-Large
                 </label>    
             
-                <label for="calm">
-                    <input type="radio" id="calm" name="characteristics" value="calm"> Calm
+                <label for="Large">
+                    <input type="radio" id="Large" name="size" value="Large"> Large
                 </label>
             
-                <label for="lazy">
-                    <input type="radio" id="lazy" name="characteristics" value="lazy"> Lazy
+                <label for="Medium">
+                    <input type="radio" id="Medium" name="size" value="Medium"> Medium
                 </label>
 
-                <label for="no preference">
-                    <input type="radio" id="no preference" name="characteristics" value="no preference"> No Preference
+                <label for="Small">
+                    <input type="radio" id="Small" name="size" value="Small"> Small
+                </label>
+
+                <label for="No Preference">
+                    <input type="radio" id="No Preference" name="size" value="No Preference"> No Preference
                 </label>
             </div>
             <hr>
-            <caption>Size: Select all that apply.</caption>
+
+            <caption>Coat Color</caption>
             <div>
-                <label for="energetic">
-                    <input type="checkbox" id="energetic" name="characteristics" value ="energetic"> Energetic
+                <label for="Dark">
+                    <input type="radio" id="Dark" name="coat" value ="Dark"> Dark Coating
                 </label>    
             
-                <label for="calm">
-                    <input type="checkbox" id="calm" name="characteristics" value="calm"> Calm
+                <label for="Light">
+                    <input type="radio" id="Light" name="coat" value="Light"> Light Coating
                 </label>
             
-                <label for="lazy">
-                    <input type="checkbox" id="lazy" name="characteristics" value="lazy"> Lazy
+                <label for="Mixed">
+                    <input type="radio" id="Mixed" name="coat" value="Mixed"> Mixed Coating
                 </label>
 
                 <label for="no preference">
-                    <input type="checkbox" id="no preference" name="characteristics" value="no preference"> No Preference
+                    <input type="radio" id="no preference" name="coat" value="no preference"> No Preference
                 </label>
             </div>
             <hr>
-            <caption>Size: Select all that apply.</caption>
-            <div>
-                <label for="energetic">
-                    <input type="checkbox" id="energetic" name="characteristics" value ="energetic"> Energetic
-                </label>    
-            
-                <label for="calm">
-                    <input type="checkbox" id="calm" name="characteristics" value="calm"> Calm
-                </label>
-            
-                <label for="lazy">
-                    <input type="checkbox" id="lazy" name="characteristics" value="lazy"> Lazy
-                </label>
-
-                <label for="no preference">
-                    <input type="checkbox" id="no preference" name="characteristics" value="no preference"> No Preference
-                </label>
-            </div>
-            <hr>
-            <caption>Size: Select all that apply.</caption>
-            <div>
-                <label for="energetic">
-                    <input type="checkbox" id="energetic" name="characteristics" value ="energetic"> Energetic
-                </label>    
-            
-                <label for="calm">
-                    <input type="checkbox" id="calm" name="characteristics" value="calm"> Calm
-                </label>
-            
-                <label for="lazy">
-                    <input type="checkbox" id="lazy" name="characteristics" value="lazy"> Lazy
-                </label>
-
-                <label for="no preference">
-                    <input type="checkbox" id="no preference" name="characteristics" value="no preference"> No Preference
-                </label>
-            </div>
-        </fieldset> 
+        </fieldset>
     </div>
+        <hr>
+        <input type="reset">
         <hr>
 </form>
     <p>
