@@ -19,35 +19,30 @@
     <hr>
     <fieldset>
         <legend>Personal Information</legend>
-        <caption>
+        <p>
             Please provide the following information as accurately as possible.
-            <hr>
-        </caption>
+        </p>
+        <hr>
         <div>
-            <label for="fname"> First Name:</label>
+            <label for="fname"> First Name:
                 <input id="fname" type="text" autofocus required tabindex="1" >
+            </label>
         </div>
         <div>
-            <label for="lname"> Last Name:</label>
+            <label for="lname"> Last Name:
                 <input id="lname" type="text" required tabindex="2" >
+            </label>
         </div>
         <div>
-            <label for="email"> Email Address:</label>
+            <label for="email"> Email Address:
                 <input id="email" type="email" required tabindex="3">
-        </div>
-        <div>
-            <label for="telephone"> Phone Number:</label>
-                <input type="tel" name="[unique-name]" required tabindex="4" >
-        </div>
-        <div>
-            <label for="date"> Date:</label>
-                <input type="date" id="inpdate" name="date" required tabindex="5">
+            </label>
         </div>
     </fieldset>
         <hr>
     <div>
-        <label for="Gender Identity"> What do you identify as? 
-            <select name="Gender Identity" id="Gender Identity">
+        <label for="gender"> What do you identify as? 
+            <select name="gender" id="gender">
             <option value="" selected> Choose one ... </option>
             <option value="Female"> Female </option>
             <option value="Male"> Male </option>
@@ -55,30 +50,30 @@
             <option value="Transgender Male"> Transgender Male </option>
             <option value="Non-binary"> Non-binary </option> 
             <option value="Genderqueer"> Genderqueer </option>  
-            <option value="Decline to State"> Decline to State </option> 
+            <option value="Decline"> Decline to State </option> 
         </select>     
         </label>
     </div>
         <hr>
     <div>
-        <label for="Housing"> What type of housing do you have?
-            <select name="Housing" id="Housing">
+        <label for="housing"> What type of housing do you have?
+            <select name="housing" id="housing">
             <option value="" selected> Choose one ... </option>
             <option value="House"> House </option>
             <option value="Apartment"> Apartment </option>
             <option value="Townhouse"> Townhouse </option>
-            <option value="Decline to State"> Decline to State </option>
+            <option value="Decline"> Decline to State </option>
          </select>     
         </label>
     </div>
         <hr>
     <div>
-        <label for="Fence"> Do you have a fenced in yard?
-            <input type="radio" id="yes" name="fence" value ="yes" required> Yes
+        <label for="fence_y"> Do you have a fenced in yard?
+            <input type="radio" id="fence_y" name="fence_y" value ="yes" required> Yes
         </label>    
     
-        <label for="Fence">
-            <input type="radio" id="no" name="fence" value="no"> No
+        <label for="fence_n">
+            <input type="radio" id="fence_n" name="fence_n" value="no"> No
         </label>
     </div>
     <hr>
