@@ -34,3 +34,7 @@ hr {
 button {
     color: solid #cefbe3;
 }
+
+img {
+    border: solid 5px #2f4858;
+}

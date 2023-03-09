@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="./cooking_pan/butter.css">
 </head>
 <body>
-    <h1>Animal Adoption Statistics Survey</h1>
+    <h1>Adoption Characteristics Survey</h1>
 
 <form>
     <hr>
     <hr>
     <div>
         <fieldset>
-            <legend>Currently Looking to Adopt?</legend>
+            <legend>Please answer the following questions.</legend>
             <div>
-                <label for="adopting_yn"> Are you currently looking for a pet? 
-                    <select name="adopting_yn" id="adopting_yn">
+                <label for="adopting_yn"> Are you currently looking to adopt? 
+                    <select name="adopting_yn" id="adopting_yn" required>
                     <option value="" selected> Choose one ... </option>
                     <option value="Yes"> Yes </option>
                     <option value="No"> No </option>
@@ -27,7 +27,7 @@
                 </label>
             </div>
         <div>
-            <label for="dog"> Do you have a specific preference of species?
+            <label for="dog"> Do you have a preference on species?
                 <input type="checkbox" id="dog" name="species" value="dog"> Dog 
             </label>
             
@@ -49,7 +49,7 @@
     <div>
         <fieldset>
         <legend>Characteristic Questionaire</legend>
-        <h3>What characteristics of the animal are you looking for when adopting?</h3>
+        <h3>What characteristics of an animal are you looking for when adopting?</h3>
         <p>
             Please answer as accurately as possible.
         </p>
@@ -110,16 +110,16 @@
             </div>
             <hr>
             <div>
-                <label for="Dark"> Coating:
-                    <input type="radio" id="Dark" name="coat" value ="Dark"> Dark Coating
+                <label for="heavy"> Shedding:
+                    <input type="radio" id="heavy" name="coat" value ="heavy"> Heavy
                 </label>    
             
                 <label for="Light">
-                    <input type="radio" id="Light" name="coat" value="Light"> Light Coating
+                    <input type="radio" id="Light" name="coat" value="Light"> Light 
                 </label>
             
-                <label for="Mixed">
-                    <input type="radio" id="Mixed" name="coat" value="Mixed"> Mixed Coating
+                <label for="no_shed">
+                    <input type="radio" id="no_shed" name="coat" value="no_shed"> No Shedding
                 </label>
 
                 <label for="none_coat">
@@ -129,6 +129,7 @@
             <hr>
         </fieldset>
     </div>
+        <hr>
         <hr>
         <input type="reset">
         <hr>
