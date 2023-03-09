@@ -8,48 +8,143 @@
     <link rel="stylesheet" href="./cooking_pan/butter.css">
 </head>
 <body>
-    <h1>Survey Page 2</h1>
+    <h1>Animal Adoption Statistics Survey</h1>
 
 <form>
     <div>
-        <label for="female"> What do you identify as?
-            <input type="radio" id="female" name="gender" value="female"> Female 
-        </label>
-        
-        <label for="male">
-            <input type="radio" id="male" name="gender" value="male"> Male
-        </label>
-        
-        <label for="non-binary">
-        <input type="radio" id="non-binary" nsame="gender" value="non-binary">Non-binary
-        </label>     
-    </div>
-        <hr>
-    <div>
-        <label for="ice-cream"> Favorite flavor of ice cream: 
-            <select name="ice-cream" id="ice-cream">
+        <label for="adopting_yn"> Are you currently looking for a pet? 
+            <select name="adopting_yn" id="adopting_yn">
             <option value="" selected> Choose one ... </option>
-            <option value="vanilla"> Vanilla </option>
-            <option value="chocolate"> Chocolate </option>
-            <option value="swirl"> Swirl </option>
+            <option value="Yes"> Yes </option>
+            <option value="No"> No </option>
+            <option value="Undecided"> Undecided </option>
             </select>     
         </label>
     </div>
         <hr>
     <div>
         <fieldset>
-            <legend> Choose your favorite activities </legend>
-            <label for="running">
-                <input type="checkbox" id="running" name="activities" value ="running"> Running
-            </label>    
-        
-            <label for="biking">
-                <input type="checkbox" id="biking" name="activities" value="biking"> Biking
+            <caption>Do you have a specific preference for its species?</caption>
+            <label for="dog"> 
+                <input type="radio" id="dpg" name="species" value="dog"> Dog 
             </label>
-        
-            <label for="reading">
-                <input type="checkbox" id="reading" name="activities" value="reading"> Reading
+            
+            <label for="cat">
+                <input type="radio" id="cat" name="species" value="cat"> Cat
             </label>
+            
+            <label for="bird">
+            <input type="radio" id="bird" nsame="species" value="bird"> Bird
+            </label>
+            
+            <label for="no preference">
+                <input type="radio" id="no preference" nsame="species" value="no preference"> No Preference
+            </label> 
+            <div>
+                <label for="other"> Other:
+                    <input id="other" type="text">
+                </label>
+            </div> 
+        </fieldset>
+    </div>
+    <hr>
+    <div>
+        <fieldset>
+            <legend>What characteristics of the animal are you looking for when adopting?</legend>
+            <caption>Energy Level: Select all that apply.</caption>
+            <div>
+                <label for="energetic">
+                    <input type="radio" id="energetic" name="characteristics" value ="energetic"> Energetic
+                </label>    
+            
+                <label for="calm">
+                    <input type="radio" id="calm" name="characteristics" value="calm"> Calm
+                </label>
+            
+                <label for="lazy">
+                    <input type="radio" id="lazy" name="characteristics" value="lazy"> Lazy
+                </label>
+
+                <label for="no preference">
+                    <input type="radio" id="no preference" name="characteristics" value="no preference"> No Preference
+                </label>
+            </div>
+            <hr>
+            <caption>Size: Select all that apply.</caption>
+            <div>
+                <label for="energetic">
+                    <input type="radio" id="energetic" name="characteristics" value ="energetic"> Energetic
+                </label>    
+            
+                <label for="calm">
+                    <input type="radio" id="calm" name="characteristics" value="calm"> Calm
+                </label>
+            
+                <label for="lazy">
+                    <input type="radio" id="lazy" name="characteristics" value="lazy"> Lazy
+                </label>
+
+                <label for="no preference">
+                    <input type="radio" id="no preference" name="characteristics" value="no preference"> No Preference
+                </label>
+            </div>
+            <hr>
+            <caption>Size: Select all that apply.</caption>
+            <div>
+                <label for="energetic">
+                    <input type="checkbox" id="energetic" name="characteristics" value ="energetic"> Energetic
+                </label>    
+            
+                <label for="calm">
+                    <input type="checkbox" id="calm" name="characteristics" value="calm"> Calm
+                </label>
+            
+                <label for="lazy">
+                    <input type="checkbox" id="lazy" name="characteristics" value="lazy"> Lazy
+                </label>
+
+                <label for="no preference">
+                    <input type="checkbox" id="no preference" name="characteristics" value="no preference"> No Preference
+                </label>
+            </div>
+            <hr>
+            <caption>Size: Select all that apply.</caption>
+            <div>
+                <label for="energetic">
+                    <input type="checkbox" id="energetic" name="characteristics" value ="energetic"> Energetic
+                </label>    
+            
+                <label for="calm">
+                    <input type="checkbox" id="calm" name="characteristics" value="calm"> Calm
+                </label>
+            
+                <label for="lazy">
+                    <input type="checkbox" id="lazy" name="characteristics" value="lazy"> Lazy
+                </label>
+
+                <label for="no preference">
+                    <input type="checkbox" id="no preference" name="characteristics" value="no preference"> No Preference
+                </label>
+            </div>
+            <hr>
+            <caption>Size: Select all that apply.</caption>
+            <div>
+                <label for="energetic">
+                    <input type="checkbox" id="energetic" name="characteristics" value ="energetic"> Energetic
+                </label>    
+            
+                <label for="calm">
+                    <input type="checkbox" id="calm" name="characteristics" value="calm"> Calm
+                </label>
+            
+                <label for="lazy">
+                    <input type="checkbox" id="lazy" name="characteristics" value="lazy"> Lazy
+                </label>
+
+                <label for="no preference">
+                    <input type="checkbox" id="no preference" name="characteristics" value="no preference"> No Preference
+                </label>
+            </div>
         </fieldset> 
     </div>
         <hr>

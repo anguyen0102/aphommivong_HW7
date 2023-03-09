@@ -11,12 +11,13 @@
     <h1>Animal Adoption Statistics Survey</h1>
     <p>
         This survey is to gather statistics on what characteristics and features people are more attracted to when adopting an animal from a shelter.
+        To begin, please fill out the following contact form, and proceed to the second part of the survey.
     </p>
 <form>
     <fieldset>
         <legend>Contact Information</legend>
         <caption>
-            Please provide the following information as accurately as possible...
+            Please provide the following information as accurately as possible.
             <hr>
         </caption>
         <div>
@@ -56,7 +57,28 @@
         </label>
     </div>
         <hr>
-
+    <div>
+        <label for="Housing"> What type of housing do you have?
+            <select name="Housing" id="Housing">
+            <option value="" selected> Choose one ... </option>
+            <option value="House"> House </option>
+            <option value="Apartment"> Apartment </option>
+            <option value="Townhouse"> Townhouse </option>
+            <option value="Decline to State"> Decline to State </option>
+         </select>     
+        </label>
+    </div>
+        <hr>
+    <div>
+        <label for="Fence"> Do you have a fenced in yard?
+            <input type="radio" id="yes" name="fence" value ="yes"> Yes
+        </label>    
+    
+        <label for="Fence">
+            <input type="radio" id="no" name="fence" value="no"> No
+        </label>
+    </div>
+    <hr>
 </form>
 
     <p>
