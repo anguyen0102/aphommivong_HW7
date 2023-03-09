@@ -2,7 +2,7 @@
 Web form creation for animal shelters, and a quick survey that can be shared via QR code, linked to this website. 
 This survey is about collecting general statistics of a person's preferences when adopting a pet. It won't be specific, but it'll be a start to proceed with more specific questions down the line.
 
-<!------>
+<!----->
 
 This survey will collect information efficiently with short questions and short answers. 
 Each question is simple to go through, and it collects enough data to do a general analysis on whether or not the physical and visible features of an animal is a variable to adoption. 
